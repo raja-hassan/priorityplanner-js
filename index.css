@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.todo-container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8ad9e3;
+    
+    border-radius: 25px;
+    padding: 14px;
+    max-width: 600px; /* Increased max width */
+    width: 30%; /* Responsive width */
+    height: 30%; /* Responsive height */
+    box-shadow: 0 0 10px rgba(216, 99, 99, 0.2);
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+    color: #fff; /* White text color */
+}
+
+input#todo-input {
+    padding: 10px;
+    width: 70%;
+    font-size: 18px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button#add-todo {
+    background-color: #d170c9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Increased padding */
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button#add-todo:hover {
+    background-color: #007780; /* Hover color */
+}
+
+ul#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+li.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px; /* Increased padding */
+    background-color: #0097a7; /* Vibrant item background color */
+    border-radius: 10px; /* Increased border radius */
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Responsive adjustments for screens up to 320px */
+@media (max-width: 320px) {
+    .todo-container {
+        width: 90%; /* Adjust the width for smaller screens */
+        height: auto; /* Let height adjust automatically */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    button#add-todo {
+        padding: 8px 16px; /* Reduce button padding for smaller screens */
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+
+    li.todo-item {
+        padding: 12px; /* Reduce padding for smaller screens */
+    }
+}

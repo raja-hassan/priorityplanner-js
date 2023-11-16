@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Video Background</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="video-background">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="todo-container">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="Add a new task">
+        <button id="add-todo">Add</button>
+        <ul id="todo-list">
+            <!-- To-Do List items will be added here using JavaScript -->
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
